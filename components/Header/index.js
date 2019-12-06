@@ -25,8 +25,8 @@ function Header() {
 
   // Appending Elements
   header.append(spanOne, hOne, spanTwo);
+  
   document.querySelector('.header-container').append(header)
 
-  console.log(header)
 }
 Header()
