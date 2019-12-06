@@ -16,13 +16,12 @@ function addTabs(data){
 
   // Appendeding Elements
   document.querySelector('.topics').appendChild(tabDiv)
-  console.log(data)
+  
 }
 
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
   .then(response => {
-    console.log(response.data)
     // addTabs(response.data)
     response.data.topics.forEach(element => {
       addTabs(element)
